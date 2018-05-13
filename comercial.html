@@ -1,0 +1,428 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Hitch</title> 
+<!-- For-Mobile-Apps-and-Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="BP" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps-and-Meta-Tags -->
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" id="fluid_dg-css"  href="css/fluid_dg.css" type="text/css" media="all">
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/planos.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="js/valid.js" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<!-- //js -->
+<!-- web-fonts -->  
+<link href="//fonts.googleapis.com/css?family=Courgette" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet" type="text/css">
+<!-- //web-fonts -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!--ckbox-->
+<script>
+	 function habilitar(){
+        if(document.getElementById('emp_liq').checked){
+            document.getElementById('motivo').removeAttribute("disabled");
+        }
+        else {
+            document.getElementById('onoff').value=''; //Evita que o usuário defina um texto e desabilite o campo após realiza-lo
+            document.getElementById('motivo').setAttribute("disabled", "disabled");
+        }
+    }
+	</script>
+	<!-- //footer -->
+<!-- banner -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="js/fluid_dg.min.js"></script> 
+<script>jQuery(document).ready(function(){
+	jQuery(function(){			
+		jQuery('#fluid_dg_wrap_4').fluid_dg({height: 'auto', loader: 'bar', pagination: false, thumbnails: true, hover: false, opacityOnGrid: false, imagePath: ''});
+	}); })
+</script>
+<!-- //banner -->
+<!-- nav -->
+<script>
+ $(window).load(function() {
+   $(".btn-nav").on("click tap", function() {
+     $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+     $(this).toggleClass("animated");
+   });
+ });
+</script>
+<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker" ).datepicker();
+						  });
+				  </script>
+				  
+				  <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+					$('.popup-with-zoom-anim').magnificPopup({
+						type: 'inline',
+						fixedContentPos: false,
+						fixedBgPos: true,
+						overflowY: 'auto',
+						closeBtnInside: true,
+						preloader: false,
+						midClick: true,
+						removalDelay: 300,
+						mainClass: 'my-mfp-zoom-in'
+					});
+																					
+					});
+				</script>
+				  
+
+
+</head>
+<body class="bg">
+<!-- menu -->
+	<button class="btn-nav w3layouts_btn">
+		<span class="bar arrow-top-r"></span>
+		<span class="bar arrow-middle-r"></span>
+		<span class="bar arrow-bottom-r"></span>
+	</button>
+	<nav class="nav-container hidden hideNav w3_nav">
+  
+	  <ul class="nav-list">
+	<li class="list-item"><a href="index.html" title="Home"><i class="glyphicon glyphicon-home" aria-hidden="true"></i></a></li>
+		<li class="list-item"><a href="quemsomos.html" title="Quem Somos"><i class="glyphicon glyphicon-info-sign" aria-hidden="true"></i></a></li>
+		<li class="list-item"><a href="services.html" title="Anuncios"><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i></a></li>
+		<li class="list-item"><a href="planos.html" title="Planos"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i></a></li>
+		<li class="list-item"><a href="contact.html" title="Contato"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></a></li>
+				<li class="list-item"><a href="comercial.html" title="Patrocionio"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></a></li>
+
+	  </ul>
+	</nav>
+	<div id="ban" class="agileinfo_menu w3l_menu">
+		<div class="agileinfo_menu_left">
+		  <h1><img src="images/LogoHitch_Prancheta 1.png" width="55px" height="55px"><a href="index.html">itch<span><i>Fazemos para você</i></span></a></h1>
+		</div>
+		<div class="agileinfo_menu_right">
+			<ul>
+				<li><a href="#small-dialog" class="play-icon popup-with-zoom-anim">Entrar</a></li>
+              	<li><a href="#small-dialog1" class="play-icon popup-with-zoom-anim">&nbsp;Cadastrar Parceiro</a></li>
+                  
+			</ul>
+			
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //menu -->
+<!-- pop-up-box -->
+<!-- pop-up-box -->
+	<div id="small-dialog" class="mfp-hide w3ls_small_dialog">
+		<h2>Entrar</h2>		
+		<div class="modal-body agileits_modal_body">
+			 <form action="#" method="post">
+				<span>
+					<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+					<input type="email" name="Email" placeholder="Email" required=""/>
+				</span>
+				<span class="w3_modal">
+					<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+					<input type="text" name="Senha" placeholder="Senha" required=""/>
+				</span>
+				<div class="agile_remember">
+					<div class="agile_remember_left">
+						<div class="check">
+							<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Esqueceu a senha?</label>
+						</div>
+					</div>
+					<div class="agile_remember_right">
+						<a href="#">Senha</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<input type="submit" value="Sign In">
+			</form>
+			<h4>Continuar...</h4>
+			<div class="social_icons agileinfo_social_asd">
+				<!-- Facebook -->
+				<a href="#" class="slide-social wthree_slide_social">
+					
+					<div class="facebook icon"> <i class="fa fa-facebook" aria-hidden="true"></i> </div>
+					<div class="facebook slide">
+						<p>Facebook</p>
+					</div>
+				</a>
+				<!-- Twitter -->
+				<a href="#" class="slide-social wthree_slide_social">
+					
+					<div class="twitter icon"> <i class="fa fa-twitter" aria-hidden="true"></i> </div>
+					<div class="twitter slide">
+						<p>Twitter</p>
+					</div>
+				</a>
+			</div>
+			<h5>Não Tem uma Conta? <a href="#small-dialog1" class="play-icon popup-with-zoom-anim">Clique Aqui</a></h5>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide">
+		<h2>Cadastro - Parceiro</h2>		
+		<div class="modal-body w3_agileits_modal_body">
+			<form action="#" method="post">
+				<div class="w3_modal_body_grid">
+					<span>Categoria*</span>
+					<select id="w3_country" onchange="change_country(this.value)" class="frm-field required">
+						<option value="null">Selecionar</option>
+						<option value="null">Buffet</option> 
+                        <option value="null">DJ</option>   
+						<option value="null">Salão de Festas</option>   
+						<option value="null">Espaço para Evento</option>   
+						<option value="null">Transporte Executivo</option>   
+						<option value="null">Ônibus Turismo</option>  
+						<option value="null">Som - Iluminação</option>
+						<option value="null">Artigo para Eventos - Geral</option>						
+					</select>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Razão Social*</span>
+					<input type="text" name="Nome" placeholder=" " required=""/>
+				</div>
+                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>CNPJ*</span>
+					<input type="text" name="Cnpj" placeholder=" " required=""/>
+				</div>
+                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Nome Proprietário*</span>
+					<input type="text" name="Nome Proprietário" placeholder=" " required=""/>
+				</div>
+
+                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Nome Fantasia*</span>
+					<input type="text" name="Nome Fantasia" placeholder=" " required=""/>
+				</div>
+                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Endereço*</span>
+					<input type="text" name="Endereço" placeholder=" " required=""/>
+				</div>
+              <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Telefone com DDD*</span>
+					<input type="text" name="Telefone" placeholder=" " required=""/>
+				</div>
+                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>E-mail*</span>
+					<input type="text" name="Email" placeholder=" " required=""/>
+				</div>
+				<div class="w3_modal_body_grid">
+					<span>Confirmação de e-mail*</span>
+					<input type="email" name="Email" placeholder=" " required=""/>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Senha</span>
+					<input type="password" name="Senha" placeholder=" " required=""/>
+				</div>
+			        <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Confirmação de senha*</span>
+					<input type="password" name="Senha" placeholder=" " required=""/>
+				</div>
+
+				                <div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Adicione uma foto para o Perfil* </span>
+					<input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+                    <input type="file" />
+				</div>
+			  <div class="w3_modal_body_grid">
+					<span>Escolha um Plano Plano <br> Com 30 dias grátis</span>
+					<select id="w3_country" onchange="change_country(this.value)" class="frm-field required">
+						<option value="null">Plano mensal de R$ 24,90</option>
+						<option value="null">Plano Anual de R$ 239,00 (20% de economia)</option>			
+					</select>
+				</div>
+				<div class="w3_modal_body_grid w3_modal_body_grid1">
+					<span>Aceito os termos de uso
+                    <input type="checkbox" name="emp_liq" id="emp_liq" onchange="habilitar()" /></span> 
+   			  </div>
+				<input type="submit" value="Cadastrar" name="motivo" id="motivo" disabled>
+			</form>		
+		  
+			<!-- //Calendar -->
+			<h4>Continuar...</h4>
+			<div class="social_icons agileits_w3layouts_cons">
+				<!-- Facebook -->
+				<a href="#" class="slide-social">
+					<div class="facebook icon agile_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i> </div>
+					<div class="facebook slide">
+						<p>Facebook</p>
+				</div>
+				</a>
+				<!-- Twitter -->
+				<a href="#" class="slide-social">
+					<div class="twitter icon w3_agile_twitter"> <i class="fa fa-twitter" aria-hidden="true"></i> </div>
+					<div class="twitter slide">
+						<p>Instagram</p>
+				</div>
+				</a>
+			</div>
+			<h5>Já é um membro <a href="#small-dialog" class="play-icon popup-with-zoom-anim">Acessar</a></h5>
+		</div>
+	</div>
+				
+				
+<!--//pop-up-box -->
+<!-- banner -->
+	<div class="banner1"> </div>
+<!-- //banner -->
+<div class="about">
+<div class="w3l_about_left">
+	<h3> SEJA UM PATROCINADOR</h3>
+       <p>Apareça em primeira página e aumente suas vendas em até 40%, tendo mais visibilidade.</p>
+       <br>	
+        <p>É uma plataforma Brasileira criada para profissionais de eventos e prestadores de serviços, onde consegue ligar o cliente diretamente com o fornecedor, com ele sua vida se torna mais fácil, encontre um serviço perto de você ou contrate um profissional conforme sua necessidade.</p>
+<br>
+	<h3> O que é patrocínio e qual a sua importância para um evento?</h3><br>	
+        <p>Ao organizarmos um evento, independentemente da sua modalidade, uma das primeiras preocupações que nos vem à cabeça é como pagar pelas ações que serão desenvolvidas.</p>
+
+<p>Em momentos assim, o patrocínio é visto por muitos como a primeira alternativa, sendo essa uma opção realmente vantajosa.</p>
+<br>
+<h3>Mas, o que é patrocínio, de fato?</h3>
+<br>
+ <p>E qual a sua importância para um evento? Para esclarecer de vez as suas dúvidas, apresentamos abaixo tudo sobre o assunto. Continue a leitura!</p>
+<br>
+<h3>O patrocínio é uma doação?</h3>
+<br>
+<p>É necessário que o organizador de eventos tenha em mente que o patrocínio não é uma doação de empresas, mas sim uma transação comercial.</p>
+<br>
+<p>O recurso financeiro disponibilizado por uma empresa para um evento deve ser visto como um investimento para atingir um público-alvo e gerar algum resultado positivo para o patrocinador, como a exposição da marca e um retorno institucional e de vendas.</p>
+<br>
+
+<h3>Quais podem ser os patrocínios de um evento?</h3>
+<br>
+<p>Outro ponto importante para entender o que é patrocínio, é que existem várias formas de uma empresa investir em um evento. Inicialmente, os patrocínios podem ser divididos em três categorias distintas: dinheiro, brindes e permuta.</p>
+<br>
+<ul>
+<li><b>Dinheiro</b><br>
+No caso dos patrocínios em dinheiro, o patrocinador destina uma quantia determinada em espécie para que o organizador invista naquilo que desejar ou for necessário para a realização do seu evento.</li>
+<br>
+<p><b>Brindes</b></p>
+
+<li>Os brindes nada mais são do que a distribuição de produtos, mimos, vale-compras, dentre outros objetos para as pessoas presentes no evento. No caso de jantares, almoços e outros eventos do gênero, é bastante comum que os brindes sejam distribuídos na forma de sorteio para os participantes. Essa alternativa, sem sombra de dúvidas, agrega valor ao evento.</li>
+<br>
+<li><b>Permutas</b><br>
+Já no caso de permutas, há uma troca que beneficia tanto o patrocinador quanto a organização ou entidade que promove um evento. Um exemplo clássico de permuta ocorre na divulgação do evento, que pode ser feita por meio de emissoras de rádio, TV ou jornal, que não cobram por isso, desde que sua marca seja adicionada aos patrocinadores.</li>
+</ul>
+<br>
+<h3>Quais são os benefícios de patrocinar um evento?</h3>
+<br>
+<p>Ao patrocinar um evento, as empresas terão diversos benefícios, como o acesso a mercados-alvo específicos, por exemplo. Suponhamos que sua empresa produza artigos esportivos, logo, patrocinar um evento com essa temática pode ser uma boa forma de aumentar a visualização da marca e fazer com que mais pessoas interessadas conheçam os seus produtos.</p>
+
+<p>Patrocinar um evento também pode ajudar na criação ou melhoria da imagem corporativa ou marca, principalmente se o evento está relacionado às causas sociais, como em prol de uma instituição de caridade ou projeto para famílias carentes, por exemplo.</p>
+
+<p>Os patrocínios podem, ainda, fortalecer a relação de uma empresa com seus clientes ou público-alvo, utilizando técnicas como o merchandising, demonstração de atributos de um produto, manutenção de clima de aprovação para as atividades da organização, etc.</p> 
+
+</div>
+	</div>
+<!-- contact -->
+			<div class="col-md-4 agileits_mail_grid_right"><h1>Entre em contato:</h1></div>
+<br>
+<br>
+	<div class="contact">
+		<div class="agileits_mail_grids">
+			<div class="agileits_mail_grid_left">
+				<form action="#" method="post">
+					<h4>Responsavel*</h4>
+					<input type="text" name="Nome" placeholder="Nome" required="">
+					<h4>Empresa*</h4>
+					<input type="text" name="Email" placeholder="Razão Social" required="">
+					<h4>Telefone para Contato*</h4>
+					<input type="text" name="Telefone" placeholder="Telefone" required="">
+					<h4>E-mail*</h4>
+										<input type="text" name="E-mail" placeholder="E-mail" required="">
+										<h4>Selecione um plano*</h4>
+										 <select> 
+      <option value="7 dias">7 dias = R$ 100,00</option>
+      <option value="15 dias">15 dias = R$ 180,00</option>
+      <option value="30 dias">15 dias = R$ 250,00</option>
+    </select>
+
+					<h4>Mensagem *</h4>
+					<textarea name="Mensagem" placeholder="Mensagem" required></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
+			<div class="col-md-4 agileits_mail_grid_right"> </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	
+<!-- contact -->
+<!-- footer -->
+		<div class="footer">
+		<div class="agile_footer_grid">
+			<h3>Inscrever-se para <span>NOVIDADES</span></h3>
+			<form action="#" method="post">
+				<input type="email" name="Email" placeholder="Email" required=""/>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+		<div class="footer-copy">
+			<div class="w3agile_footer_grids">
+				<div class="w3agile_footer_grid">
+					<h3>Sobre Nós</h3>
+					<p>É uma plataforma Brasileira criada para profissionais de eventos e prestadores de serviços, onde consegue ligar o cliente diretamente com o fornecedor, com ele sua vida se torna mais fácil, encontre um serviço perto de você ou contrate um profissional conforme sua necessidade.</p>
+				</div>
+				<div class="w3agile_footer_grid">
+					<h3>Informações de contato</h3>
+					<ul>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:contato@hitch.com.br">contato@hitch.com.br</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:comercial@hitch.com.br">comercial@hitch.com.br</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:sac@hitch.com.br">sac@hitch.com.br</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>11-94016-4551</li>
+					</ul>
+				</div>
+				<div class="w3agile_footer_grid w3agile_footer_grid1">
+					<h3>Navegação</h3>
+					<ul>
+						<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="quemsomos.html">Sobre Nós</a></li>
+						<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="services.html">Anuncios</a></li>
+						<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="planos.html">Planos</a></li>
+						<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="comercial.html">Patrocinadores</a></li>
+						<li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="contact.html">Contato</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="copy-right-social">
+			<div class="footer-pos">
+				<a href="#ban" class="scroll"><span></span></a>
+			</div>
+			<div class="copy-right">
+				<p>&copy; 2018 Registros Reservados | Design by Bruna Passanesi</p>
+			</div>
+			<div class="copy-right-social1">
+				<ul class="wthree_social_icons1">
+					<li><a href="#" class="icon1 w3_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+<!-- //nav -->
+</body>
+</html>
